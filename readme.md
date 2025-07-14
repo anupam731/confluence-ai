@@ -125,22 +125,5 @@ python scripts/searcher.py --stats
 #### summarize harry had a little lamb but the lamb had harry and they were lamb and man
 #### summarize: 321212804
 
-######################## PROJECT STRUCTURE ################################################
-
-project_root/
-├── scripts/
-│ ├── parser.py # XML parsing with batch processing
-│ ├── embedder.py # Text embedding generation
-│ ├── indexer.py # FAISS index creation
-│ ├── searcher_mistral_mac.py # Search interface with Mistral
-│ └── mistral_service_mac.py # Mistral service wrapper
-├── data/
-│ ├── raw/ # Original entities.xml or zipped dumps
-│ ├── parsed/ # JSONL/JSON outputs from parser
-│ ├── embeddings/ # .npy embedding files
-│ └── indexes/ # FAISS index files
-├── logs/
-│ └── processing.log # System logs
-└── venv/ # Virtual environment
 
 
