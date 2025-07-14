@@ -129,19 +129,18 @@ python scripts/searcher.py --stats
 
 project_root/
 ├── scripts/
-│   ├── parser.py
-│   ├── embedder.py
-│   ├── indexer.py
-│   ├── searcher_mistral_mac.py
-│   └── mistral_service_mac.py
+│ ├── parser.py # XML parsing with batch processing
+│ ├── embedder.py # Text embedding generation
+│ ├── indexer.py # FAISS index creation
+│ ├── searcher_mistral_mac.py # Search interface with Mistral
+│ └── mistral_service_mac.py # Mistral service wrapper
 ├── data/
-│   ├── raw/               #### original entities.xml
-│   ├── parsed/            #### JSONL or JSON outputs (from parser)
-│   ├── embeddings/        #### .npy files (from embedder)
-│   └── indexes/           #### FAISS/HNSW index files (from indexer)
+│ ├── raw/ # Original entities.xml or zipped dumps
+│ ├── parsed/ # JSONL/JSON outputs from parser
+│ ├── embeddings/ # .npy embedding files
+│ └── indexes/ # FAISS index files
 ├── logs/
-│   └── processing.log
-└── venv/
-
+│ └── processing.log # System logs
+└── venv/ # Virtual environment
 
 
